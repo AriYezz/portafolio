@@ -1,0 +1,39 @@
+doctype html
+html
+    head        
+        link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css")
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+        link(href="../css/header.css" rel="stylesheet" type="text/css")
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, user-scalable=no')
+        block styl
+        block title
+  body
+    block header
+        header(class="row smboostrap")
+            div(class="col-xs-12 col-sm-3 col-md-3 spboostrap cl-header menu-izquerda") 
+                a(href="#" class="title-menu-izquierda") 
+                    span Amelia Yesenia Vergaray Dávila
+                i(class="fa fa-list icon-arraw-mobile" aria-hidden="true")
+            div(class="col-xs-12 col-sm-9 col-md-9 spboostrap cl-header menu-derecha")
+                nav(class="navegacion-npm")
+                    ul
+                        each menu in ["Acerca de mi","Mis Tecnologías","Cursos","Mis Proyectos"]
+                            li 
+                                a(href="#" class="link-a-npm")=menu
+                
+                    a(href="https://www.facebook.com/ariadne.zey" class="link-fb") Contactame
+    block content
+    block footer
+        script(src="https://storage.googleapis.com/epass-prod/static/js/jquery.min.js?20160506119313021612")        
+        script.
+            $(document).on("ready",inicio)
+            function inicio()
+            {
+                $(".icon-arraw-mobile").on("click",desplegarMenuMobile)
+            }
+            function desplegarMenuMobile()
+            {
+                $( ".navegacion-npm" ).slideToggle( "fast");
+            }

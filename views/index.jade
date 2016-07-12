@@ -1,0 +1,56 @@
+extends ./layout/layout.jade
+block styl
+    link(href="../css/inicio.css" rel="stylesheet" type="text/css")
+block title
+    title Inicio
+block content
+    div(class="fondo-img-1")
+        div(class="row smboostrap fila1-npm")
+            div(class="col-xs-1 col-sm-1 col-md-1 spboostrap")
+                a(href="#" class="npm-logo")
+                    svg(viewbox='0 0 18 7')
+                        path(fill='#CB3837', d='M0,0v6h5v1h4v-1h9v-6')
+                        path(fill='#FFF', d='M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4')
+            div(class="col-xs-10 col-sm-10 col-md-10 spboostrap contenedor-buscador")
+                div(class="txt_buscador")
+                    input(type="text" placeholder="Bssuscar proyectos" class="txt_buscador_input")
+                    button(class="btn_buscar_lupa")
+                        i(class="fa fa-search" aria-hidden="true")
+            div(class="col-xs-1 col-sm-1 col-md-1 spboostrap contenedor-mi-facebook")
+                a(href="https://www.facebook.com/ariadne.zey" class="link-normal") Mi Facebook
+    div(class="bloque2")
+        div(class="row smboostrap")
+            div(class="col-xs-0 col-sm-5 col-md-5 spboostrap foto-aria") 
+                a(href="#" class="fotito"): img(src= "../../public/img/yess.jpg")
+            div(class="col-xs-12 col-sm-7 col-md-7 spboostrap texto1")
+                h1(class="titulo1") ACERCA DE MI 
+                p(class="contenido") Bachiller en ciencias de la computacion de la UNIVERSIDAD NACIONAL DE TRUJILLO. Desarrolladora front-end y twincita de twincito jiji ya no se que mas poner u.u ayudeme mi twin sjhskshskshsaksasajsashj  sjhskjhskshakas kshsakhskas
+                a(href="https://www.facebook.com/ariadne.zey" class="btn") Contactame aqui
+    div(class="bloque3") 
+        p(class="titulo2") MIS TECNOLOGIAS
+    div(class="row smboostrap tec")
+        div(class="col-xs-4 col-sm-4 col-md-4 tec1")
+            div(class="icono1") 
+                img(class="imagen-icono1" src="../../public/img/logos/html5.png")
+            div(class="icono1") 
+                img(class="imagen-icono1" src="../../public/img/logos/css3.jpg")
+            div(class="icono1") 
+                img(class="imagen-icono1" src="../../public/img/logos/js.png")
+        div(class="col-xs-4 col-sm-4 col-md-4 tec2")
+            div(class="icono1")
+                img(class="imagen-icono1" src="../../public/img/logos/jade.png")
+            div(class="icono1")
+                img(class="imagen-icono1" src="../../public/img/logos/styl.png")
+            div(class="icono1")
+                img(class="imagen-icono1" src="../../public/img/logos/bootstrap.png")
+        div(class="col-xs-4 col-sm-4 col-md-4 tec3")
+            div(class="icono1")
+                img(class="imagen-icono1" src="../../public/img/logos/php.png")
+            div(class="icono1")
+                img(class="imagen-icono1" src="../../public/img/logos/github.png")
+            div(class="icono1")
+                img(class="imagen-icono1" src="../../public/img/logos/linux.jpg")
+    div Yess
+
+
+

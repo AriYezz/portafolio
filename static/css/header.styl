@@ -1,0 +1,77 @@
+npm-background-header=#c12127
+npm-color-header=#dcdcdc
+npm-background-header-movile=#235b7b
+body
+	font-family: 'Open Sans', sans-serif;
+header
+	background npm-background-header
+	color npm-color-header
+	padding 0.8em 1.6em
+.navegacion-npm li
+	display inline-block
+	vertical-align top
+ul
+	padding 0
+	display inline-block
+header a
+	color npm-color-header
+	transition all ease 0.3s
+header a:hover
+	color white;
+	text-decoration none
+.smboostrap
+	margin-left 0px
+	margin-right 0px
+.spboostrap
+	padding-left 0px
+	padding-right 0px
+.navegacion-npm ul
+	margin-bottom 0px
+.cl-header
+	npm-color-header
+.menu-derecha
+	text-align right
+.link-a-npm
+	cursor pointer
+	display inline-block
+	padding 0em 1em
+.icon-arraw-mobile
+	display none
+@media screen and (max-width: 768px)
+	.menu-izquerda
+		text-align center
+	.menu-derecha
+		text-align center
+@media screen and (max-width: 768px)
+	.icon-arraw-mobile
+		display block
+		position absolute
+		right 18px
+		top 14px
+		font-size 1.5em
+		cursor pointer
+	.navegacion-npm
+		display none
+	.navegacion-npm li
+		display block
+	.title-menu-izquierda
+		font-size 18px
+		display inline-block
+		padding 0.8em
+		width 100%
+	header
+		background npm-background-header-movile
+		padding 0
+		position relative
+	.navegacion-npm
+		background #283546
+	.navegacion-npm a
+		width 100%
+		cursor pointer
+		transition all ease 0.3s
+		text-align left
+		padding 0.4em
+		font-size 18px
+		border-bottom 1px solid gray
+	.navegacion-npm a:hover
+		background npm-background-header

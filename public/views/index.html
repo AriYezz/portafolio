@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>       
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="../css/inicio.css" rel="stylesheet" type="text/css">
+    <title>Inicio</title>
+  </head>
+</html>
+<body>
+  <header class="row smboostrap">
+    <div class="col-xs-12 col-sm-3 col-md-3 spboostrap cl-header menu-izquerda"> <a href="#" class="title-menu-izquierda"> <span>Amelia Yesenia Vergaray Dávila</span></a><i aria-hidden="true" class="fa fa-list icon-arraw-mobile"></i></div>
+    <div class="col-xs-12 col-sm-9 col-md-9 spboostrap cl-header menu-derecha">
+      <nav class="navegacion-npm">
+        <ul>
+          <li> <a href="#" class="link-a-npm">Acerca de mi</a></li>
+          <li> <a href="#" class="link-a-npm">Mis Tecnologías</a></li>
+          <li> <a href="#" class="link-a-npm">Cursos</a></li>
+          <li> <a href="#" class="link-a-npm">Mis Proyectos</a></li>
+        </ul><a href="https://www.facebook.com/ariadne.zey" class="link-fb">Contactame</a>
+      </nav>
+    </div>
+  </header>
+  <div class="fondo-img-1">
+    <div class="row smboostrap fila1-npm">
+      <div class="col-xs-1 col-sm-1 col-md-1 spboostrap"><a href="#" class="npm-logo">
+          <svg viewbox="0 0 18 7">
+            <path fill="#CB3837" d="M0,0v6h5v1h4v-1h9v-6"></path>
+            <path fill="#FFF" d="M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4"></path>
+          </svg></a></div>
+      <div class="col-xs-10 col-sm-10 col-md-10 spboostrap contenedor-buscador">
+        <div class="txt_buscador">
+          <input type="text" placeholder="Bssuscar proyectos" class="txt_buscador_input">
+          <button class="btn_buscar_lupa"><i aria-hidden="true" class="fa fa-search"></i></button>
+        </div>
+      </div>
+      <div class="col-xs-1 col-sm-1 col-md-1 spboostrap contenedor-mi-facebook"><a href="https://www.facebook.com/ariadne.zey" class="link-normal">Mi Facebook</a></div>
+    </div>
+  </div>
+  <div class="bloque2">
+    <div class="row smboostrap">
+      <div class="col-xs-0 col-sm-5 col-md-5 spboostrap foto-aria"> <a href="#" class="fotito"><img src="../../public/img/yess.jpg"></a></div>
+      <div class="col-xs-12 col-sm-7 col-md-7 spboostrap texto1">
+        <h1 class="titulo1">ACERCA DE MI </h1>
+        <p class="contenido">Bachiller en ciencias de la computacion de la UNIVERSIDAD NACIONAL DE TRUJILLO. Desarrolladora front-end y twincita de twincito jiji ya no se que mas poner u.u ayudeme mi twin sjhskshskshsaksasajsashj  sjhskjhskshakas kshsakhskas</p><a href="https://www.facebook.com/ariadne.zey" class="btn">Contactame aqui</a>
+      </div>
+    </div>
+  </div>
+  <div class="bloque3"> 
+    <p class="titulo2">MIS TECNOLOGIAS</p>
+  </div>
+  <div class="row smboostrap tec">
+    <div class="col-xs-4 col-sm-4 col-md-4 tec1">
+      <div class="icono1"> <img src="../../public/img/logos/html5.png" class="imagen-icono1"></div>
+      <div class="icono1"> <img src="../../public/img/logos/css3.jpg" class="imagen-icono1"></div>
+      <div class="icono1"> <img src="../../public/img/logos/js.png" class="imagen-icono1"></div>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 tec2">
+      <div class="icono1"><img src="../../public/img/logos/jade.png" class="imagen-icono1"></div>
+      <div class="icono1"><img src="../../public/img/logos/styl.png" class="imagen-icono1"></div>
+      <div class="icono1"><img src="../../public/img/logos/bootstrap.png" class="imagen-icono1"></div>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 tec3">
+      <div class="icono1"><img src="../../public/img/logos/php.png" class="imagen-icono1"></div>
+      <div class="icono1"><img src="../../public/img/logos/github.png" class="imagen-icono1"></div>
+      <div class="icono1"><img src="../../public/img/logos/linux.jpg" class="imagen-icono1"></div>
+    </div>
+  </div>
+  <div>Yess</div>
+  <script src="https://storage.googleapis.com/epass-prod/static/js/jquery.min.js?20160506119313021612">       </script>
+  <script>
+    $(document).on("ready",inicio)
+    function inicio()
+    {
+        $(".icon-arraw-mobile").on("click",desplegarMenuMobile)
+    }
+    function desplegarMenuMobile()
+    {
+        $( ".navegacion-npm" ).slideToggle( "fast");
+    }
+  </script>
+</body>
